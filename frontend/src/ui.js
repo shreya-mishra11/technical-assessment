@@ -15,6 +15,12 @@ import { ConditionNode } from './nodes/conditionNode';
 import { TransformNode } from './nodes/transformNode';
 import { AggregateNode } from './nodes/aggregateNode';
 import { FileProcessorNode } from './nodes/fileProcessorNode';
+// New nodes using the nodeFactory abstraction
+import { CalculatorNode } from './nodes/calculatorNode';
+import { FilterNode } from './nodes/filterNode';
+import { DelayNode } from './nodes/delayNode';
+import { FormatNode } from './nodes/formatNode';
+import { ValidationNode } from './nodes/validationNode';
 
 import 'reactflow/dist/style.css';
 
@@ -30,6 +36,12 @@ const nodeTypes = {
   transform: TransformNode,
   aggregate: AggregateNode,
   fileProcessor: FileProcessorNode,
+  // New nodes created with nodeFactory abstraction
+  calculator: CalculatorNode,
+  filter: FilterNode,
+  delay: DelayNode,
+  format: FormatNode,
+  validation: ValidationNode,
 };
 
 const selector = (state) => ({

@@ -16,6 +16,12 @@ export const PipelineToolbar = () => {
                 <DraggableNode type='transform' label='Transform' />
                 <DraggableNode type='aggregate' label='Aggregate' />
                 <DraggableNode type='fileProcessor' label='File Processor' />
+                {/* New nodes created with nodeFactory abstraction */}
+                <DraggableNode type='calculator' label='Calculator' />
+                <DraggableNode type='filter' label='Filter' />
+                <DraggableNode type='delay' label='Delay' />
+                <DraggableNode type='format' label='Format' />
+                <DraggableNode type='validation' label='Validation' />
             </div>
         </div>
     );
